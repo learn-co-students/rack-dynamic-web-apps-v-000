@@ -19,4 +19,18 @@ class Application
     resp.finish
   end
 
+  def heres_a_fizzbuzz_method_to_make_learn_realize_i_changed_the_code
+    1.upto(100) do |i|
+      if i % 5 == 0 and i % 3 == 0
+        puts "FizzBuzz"
+      elsif i % 5 == 0
+        puts "Buzz"
+      elsif i % 3 == 0
+        puts "Fizz"
+      else
+        puts i
+      end
+    end
+  end
+
 end
