@@ -33,4 +33,9 @@ class Application
     end
   end
 
+  def how_man_changes_do_i_need_to_make_come_on_its_a_codealong
+    input = gets.chomp!
+    puts "You wrote #{input}."
+  end
+
 end
