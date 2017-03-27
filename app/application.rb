@@ -3,13 +3,13 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    num_1 = Kernel.rand(1..10)
-    num_2 = Kernel.rand(1..10)
-    num_3 = Kernel.rand(1..10)
+    num1 = Math.rand(1..10)
+    num2 = Math.rand(1..10)
+    num3 = Math.rand(1..10)
 
-    resp.write "Your numbers: #{num_1}, #{num_2}, #{num_3}\n"
+    resp.write "Your numbers: #{num1}, #{num2}, #{num3}\n"
 
-    if num_1==num_2 && num_2==num_3
+    if num1==num2 && num2==num3
       resp.write "You Win"
     else
       resp.write "You Lose"
