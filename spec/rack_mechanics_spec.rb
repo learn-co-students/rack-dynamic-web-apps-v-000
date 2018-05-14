@@ -1,5 +1,5 @@
 require_relative './spec_helper'
-describe "an ok request" do
+puts describe "an ok request" do
   it 'wins if they are all the same' do
     allow(Kernel).to receive(:rand).and_return(2)
     get '/'
