@@ -13,11 +13,11 @@ class Application
 
 
     if num1 == num2 && num2 == num3
-      resp.write "You win"
+      resp.write "You Win"
     else 
       resp.write "You Lose"
-    resp.finish
     end
+    resp.finish
   end
 
 end
